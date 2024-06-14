@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"> </script>
+
+    <style>
+        body {
+            background-color: rgb(190, 200, 8);
+        }
+
+        #img {
+            border-radius: 10rem;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinning {
+            animation: spin 1s linear;
+        }
+
+        .heading {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: underline;
+            color: rgb(13, 16, 214);
+        }
+
+        p {
+            font-size: 28px;
+            font-family: fantasy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="text-center text-4xl heading	"> Coin Flip</h2>
+    <div class="flex flex-col justify-center items-center m-3">
+        <div class="tossBtn flex flex-col justify-center items-center ">
+            <img class="w-72" id="img" src="tails.jpg" alt="coin">
+            <button class="bg-black text-white px-4 py-2 rounded-xl	mt-3" id="btn" onclick="tossFunction()">Click to
+                flip</button>
+        </div>
+        <div class="para">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
